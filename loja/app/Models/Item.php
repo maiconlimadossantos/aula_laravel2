@@ -13,6 +13,6 @@ class Item extends Model
         'descricao',
         'preco_unitario',
         'tipo_medida',
-        'quantidade_medida',
+        'quantidade_medida'
     ];
 }

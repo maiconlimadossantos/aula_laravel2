@@ -13,7 +13,7 @@ class UsuarioController extends Controller
     public function index()
     {
         $response = Http::get($this->api_url . '/usuarios');
-        
+
     }
 
     /**
@@ -21,7 +21,10 @@ class UsuarioController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $response = Http::post($this->api_url . '/usuarios', $request->all());
+        if($response->successful()){
+            return redirect()->route('usuarios.index')->with('success','Usuário criado com sucesso.');
+        }
     }
 
     /**
