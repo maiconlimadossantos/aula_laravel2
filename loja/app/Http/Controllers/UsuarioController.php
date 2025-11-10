@@ -12,7 +12,8 @@ class UsuarioController extends Controller
      */
     public function index()
     {
-        //
+        $response = Http::get($this->api_url . '/usuarios');
+        
     }
 
     /**
