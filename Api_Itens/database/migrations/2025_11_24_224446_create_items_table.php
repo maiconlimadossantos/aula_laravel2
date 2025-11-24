@@ -20,8 +20,8 @@ return new class extends Migration
             $table->string('preco');
             $table->string('quantidade_estoque');
             $table->string('fornecedor');
-            $table->string('data_validade');
-            $table->string('tipo_medida',['liquido','kilograma']);
+            $table->date('data_validade');
+            $table->enum('tipo_medida',['liquido','kilograma']);
             $table->timestamps();
         });
     }
