@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('nome');
             $table->string('email')->unique();
             $table->string('senha');
-            $table->string('tipo')->default('cliente'); // cliente ou administrador
+            $table->string('tipo_usuario')->default('cliente'); // cliente ou administrador
             $table->timestamps();
         });
     }

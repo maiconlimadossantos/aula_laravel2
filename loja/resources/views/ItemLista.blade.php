@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
 <div class="lg:col-span-2 bg-white p-6 rounded-lg shadow">
     <h2 class="text-2xl font-semibold mb-4">Lista de Itens</h2>
     <div class="overflow-x-auto">
@@ -63,3 +70,5 @@
 
     // Nota: Esta função faz parte do script maior do arquivo 'interactive_item_dashboard_with_crud.html'.
 </script>
+</body>
+</html>

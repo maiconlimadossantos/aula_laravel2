@@ -12,7 +12,7 @@ class ItemController extends Controller
      */
     public function index()
     {
-        return response()->json(['items' => Item::all()], 200);
+        return response()->json(['items.index' => Item::all()], 200);
     }
 
     /**
@@ -34,7 +34,7 @@ class ItemController extends Controller
 
         $item = Item::create($request->all());
 
-        return response()->json(['item' => $item], 201);
+        return response()->json(['item.create' => $item], 201);
     }
 
     /**
@@ -43,7 +43,7 @@ class ItemController extends Controller
     public function show(Item $item)
     {
         try {
-            return response()->json(['item' => $item], 200);
+            return response()->json(['item.show' => $item], 200);
         } catch (\Exception $e) {
             return response()->json(['error' => 'Item não encontrado'], 404);
         }
@@ -66,7 +66,7 @@ class ItemController extends Controller
             'tipo_medida' => 'sometimes|required|in:liquido,kilograma',
         ]);
         $item->update($request->all());
-        return response()->json(['item' => $item], 200);
+        return response()->json(['item.index' => $item], 200);
     }
 
     /**

@@ -52,6 +52,19 @@
                 <h1 class="text-3xl md:text-4xl font-bold text-gray-900">Painel Interativo de Itens</h1>
                 <p class="text-lg text-gray-600 mt-1">Explore, filtre e adicione itens ao catálogo.</p>
             </div>
+            <title>Login</title>
+                <form action='route{{"usuario.index"}}' method="post"   >
+
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" placeholder="Digite o nome do usuario" >
+                    <br>
+                    <label for="email">Email:</label>
+                    <input type="text" value="email" id="email" placeholder="Digite o email do usuario ">
+                    <br>
+                    <label for="senha">Senha</label>
+                    <input type="password" value="senha" id="senha" placeholder="Digite a senha do usuario">
+                <button type="submit">Cofirmar</button>
+                </form>
             <button id="openModalBtn" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 transition">
                 Adicionar Novo Item
             </button>
